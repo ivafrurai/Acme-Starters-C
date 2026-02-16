@@ -10,5 +10,10 @@
 
 master.license.title = License
 master.license.text = \
-	This is a project developed by students of the University of Seville \
-     and may not be used for any purpose other than educational purposes.
+	You may use this system free of charge, as long as you carefully observe the \
+	existing applicable laws.  Please, note that we do not share any information \
+	about you with any other company.  We store the following items in your computer: \
+	"JSESSIONID" to identify your work session, "remember" to let you authenticate \
+	automatically, "language" to store your language preferences, "XSRF-TOKEN" to \
+	deal with CSRF attacks, and "returnStack" to know where to return when your press \
+	some buttons.

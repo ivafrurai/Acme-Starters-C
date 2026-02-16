@@ -10,4 +10,5 @@
 
 master.welcome.title = Welcome!
 master.welcome.text = \
-	Welcome to Acme Startes. Hope our web is useful to you.
+	Hello World! Never before has it been easier to get your \
+	project up and running!
