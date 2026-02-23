@@ -18,7 +18,7 @@ public class Sponsor extends AbstractRole {
 
 	private static final long	serialVersionUID	= 1L;
 
-	//Atributes
+	//Attributes
 	@Mandatory
 	// @ValidText
 	@Column
