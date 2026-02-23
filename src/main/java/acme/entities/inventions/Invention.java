@@ -1,6 +1,9 @@
 
-package acme.entities;
+package acme.entities.inventions;
 
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -18,20 +21,20 @@ import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
-import acme.realms.Sponsor;
+import acme.realms.Inventor;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-public class Sponsorship extends AbstractEntity {
+public class Invention extends AbstractEntity {
 
-	//Serialisation version 
+	// Serialisation version --------------------------------------------------
 
 	private static final long	serialVersionUID	= 1L;
 
-	//Attributes
+	// Attributes -------------------------------------------------------------
 
 	@Mandatory
 	//@ValidTicker
@@ -65,40 +68,39 @@ public class Sponsorship extends AbstractEntity {
 
 	@Mandatory
 	@Valid
-	@Transient
-	private Double				monthsActive;
-
-	@Mandatory
-	//@ValidMoney(positive)
-	@Transient
-	private Money				totalMoney;
-
-	@Mandatory
-	@Valid
 	@Column
 	private Boolean				draftMode;
 
 	// Derived attributes -----------------------------------------------------
-	/*
-	 * @Valid
-	 * 
-	 * @Transient
-	 * public Double getMonthsActive() {
-	 * 
-	 * }
-	 * 
-	 * 
-	 * @Transient
-	 * public Money getTotalMoney() {
-	 * 
-	 * }
-	 */
+
+
+	@Valid
+	@Transient
+	public Double getMonthsActive() {
+		if (this.startMoment == null || this.endMoment == null)
+			return 0.0;
+
+		LocalDate start = this.startMoment.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+		LocalDate end = this.endMoment.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+
+		long days = ChronoUnit.DAYS.between(start, end);
+
+		double months = days / 30.0;
+
+		return Math.round(months * 10.0) / 10.0;
+	}
+
+	@Transient
+	public Money getCost() {
+		return null;
+	}
 
 	// Relationships ----------------------------------------------------------
+
 
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Sponsor				sponsor;
+	private Inventor inventor;
 
 }
