@@ -7,3 +7,6 @@ user-account-provider-02,true,"UserIdentity{name: 'Martina', surname: 'коза 
 user-account-provider-03,true,"UserIdentity{name: 'Antonia', surname: 'אבטיח Æløzå', email: 'antonia@acme.com'}",provider3,provider3
 user-account-administrator-02,true,"UserIdentity{name: 'Administrator1', surname: 'Admin1', email: 'administrator1@acme.com'}",administrator1,administrator1
 user-account-administrator-03,true,"UserIdentity{name: 'Administrator2', surname: 'Admin2', email: 'administrator2@acme.com'}",administrator2,administrator2
+user-account-fundraiser-01,true,"UserIdentity{name: 'Student', surname: 'Uno', email: 'st1@acme.com'}",fundraiser1,fundraiser1
+user-account-fundraiser-02,true,"UserIdentity{name: 'Student', surname: 'Dos', email: 'st2@acme.com'}",fundraiser2,fundraiser2
+user-account-fundraiser-03,true,"UserIdentity{name: 'Student', surname: 'Tres', email: 'st3@acme.com'}",fundraiser3,fundraiser3

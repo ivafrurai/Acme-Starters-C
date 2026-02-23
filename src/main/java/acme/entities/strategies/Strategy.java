@@ -29,6 +29,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+//@ValidStrategy
 public class Strategy extends AbstractEntity {
 
 	// Serialisation version --------------------------------------------------
