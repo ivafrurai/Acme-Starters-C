@@ -317,6 +317,9 @@
                                 
         
         
+        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+                
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/generated-sources/annotations"/>
         <dependent-module archiveName="Acme-Framework-26.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Acme-Framework-26.2.0/Acme-Framework-26.2.0">
             <dependency-type>uses</dependency-type>
