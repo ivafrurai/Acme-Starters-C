@@ -67,7 +67,7 @@ public class StrategyValidator extends AbstractValidator<ValidStrategy, Strategy
 
 				boolean validPublishedStrategy = strategy.isDraftMode() || validTime;
 
-				super.state(context, validPublishedStrategy, "startMoment", "acme.validation.strategy.dates.error");
+				super.state(context, validPublishedStrategy, "startMoment", "acme.validation.strategy.dates.error.message");
 
 			}
 			result = !super.hasErrors(context);

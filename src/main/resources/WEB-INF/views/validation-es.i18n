@@ -1,3 +1,6 @@
 acme.validation.text.message   	    = Debe tener entre 1 y 255 caracteres
 acme.validation.header.message   	= Debe tener entre 1 y 75 caracteres
 acme.validation.ticker.message 		= El ticker debe comenzar con 2 letras mayúsculas y 2 números, seguidos de un guion y entre 5-10 caracteres alfanuméricos
+acme.validation.strategy.duplicated-ticker.message = Ya existe una estrategia con este ticker.
+acme.validation.strategy.tactics.error.message = Una estrategia no puede ser publicada sin al menos una táctica.
+acme.validation.strategy.dates.error.message = La fecha de finalizacion debe ser posterior a la fecha de inicio, y la fecha de inicio debe de ser futura.
