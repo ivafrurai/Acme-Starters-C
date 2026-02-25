@@ -17,6 +17,8 @@ import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidString;
 import acme.client.components.validation.ValidUrl;
+import acme.constraints.ValidText;
+import acme.constraints.ValidTicker;
 import acme.realms.Spokeperson;
 import lombok.Getter;
 import lombok.Setter;
@@ -30,7 +32,7 @@ public class Campaign extends AbstractEntity {
 	private static final long	serialVersionUID	= 1L;
 	// Attributes
 	@Mandatory
-	//@ValidTicker 
+	@ValidTicker
 	@Column(unique = true)
 	private String				ticker;
 	@Mandatory
@@ -38,7 +40,7 @@ public class Campaign extends AbstractEntity {
 	@Column
 	private String				name;
 	@Mandatory
-	//@ValidText
+	@ValidText
 	@Column
 	private String				description;
 	@Mandatory
