@@ -1,0 +1,6 @@
+acme.validation.text.message   	    = Must have from 1 to 255 characters
+acme.validation.header.message   	= Must have from 1 to 75 characters
+acme.validation.ticker.message 		= The ticker must start with 2 uppercase letters and 2 digits, followed by a hyphen and 5-10 alphanumeric characters
+acme.validation.strategy.duplicated-ticker.message = There is already a strategy with the same ticker.
+acme.validation.strategy.tactics.error.message = A Strategy cannot be published unless they have at least one tactic.
+acme.validation.strategy.dates.error.message = End date must be after Start date, and Start date must be future.
