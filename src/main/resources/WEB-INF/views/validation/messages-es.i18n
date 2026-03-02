@@ -1,0 +1,13 @@
+# messages-es.i18n
+#
+# Copyright (C) 2012-2026 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+acme.validation.header.message = Este campo debe tener entre 1 y 75 caracteres (no se admiten solo espacios en blanco).
+acme.validation.text.message = Este campo debe tener entre 1 y 255 caracteres (no se admiten solo espacios en blanco).
+acme.validation.ticker.message = Este campo debe tener entre 5 y 15 caracteres, admitiendo únicamente letras, números, guiones y guiones bajos.
