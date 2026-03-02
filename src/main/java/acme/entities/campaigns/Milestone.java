@@ -1,5 +1,5 @@
 
-package acme.entities;
+package acme.entities.campaigns;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -20,9 +20,12 @@ import lombok.Setter;
 @Setter
 public class Milestone extends AbstractEntity {
 
-	// Serialisation Identifier
+	// Serialisation Identifier-------------------------------------------------
+
 	private static final long	serialVersionUID	= 1L;
-	// Attributes
+
+	// Attributes-------------------------------------------------
+
 	@Mandatory
 	@ValidHeader
 	@Column
@@ -39,7 +42,9 @@ public class Milestone extends AbstractEntity {
 	@Valid
 	@Column
 	private MilestoneKind		kind;
-	// Relationship
+
+	// Relationship-------------------------------------------------
+
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
