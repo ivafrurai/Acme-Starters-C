@@ -13,10 +13,13 @@ import javax.validation.constraints.NotBlank;
 
 import org.hibernate.validator.constraints.Length;
 
-@Target(ElementType.FIELD)
+@Target({
+	ElementType.FIELD, ElementType.METHOD
+})
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = {})
 @ReportAsSingleViolation
+
 @NotBlank
 @Length(min = 1, max = 75)
 
