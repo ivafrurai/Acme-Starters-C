@@ -1,6 +1,8 @@
 
 package acme.entities.campaigns;
 
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
@@ -21,7 +23,6 @@ import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidString;
 import acme.client.components.validation.ValidUrl;
-import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidCampaign;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
@@ -45,26 +46,32 @@ public class Campaign extends AbstractEntity {
 	@ValidTicker
 	@Column(unique = true)
 	private String				ticker;
+
 	@Mandatory
 	@ValidString
 	@Column
 	private String				name;
+
 	@Mandatory
 	@ValidText
 	@Column
 	private String				description;
+
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				startMoment;
+
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				endMoment;
+
 	@Optional
 	@ValidUrl
 	@Column
 	private String				moreInfo;
+
 	@Mandatory
 	@Column
 	private boolean				draftMode;
@@ -79,7 +86,12 @@ public class Campaign extends AbstractEntity {
 	@Valid
 	@Transient
 	public Double getMonthsActive() {
-		return (double) MomentHelper.computeDuration(this.startMoment, this.endMoment).get(ChronoUnit.MONTHS);
+
+		LocalDate start = this.startMoment.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+
+		LocalDate end = this.endMoment.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+
+		return (double) ChronoUnit.MONTHS.between(start, end);
 	}
 
 	@Valid
