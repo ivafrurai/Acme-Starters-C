@@ -15,9 +15,12 @@ import lombok.Setter;
 @Setter
 public class Spokeperson extends AbstractRole {
 
-	// Serialisation Identifier
+	// Serialisation Identifier-------------------------------------------------
+
 	private static final long	serialVersionUID	= 1L;
-	// Attributes
+
+	// Attributes-------------------------------------------------
+
 	@Mandatory
 	@ValidString
 	@Column
@@ -27,7 +30,6 @@ public class Spokeperson extends AbstractRole {
 	@Column
 	private String				achievements;
 	@Mandatory
-	//Valid
 	@Column
 	private boolean				licensed;
 }
