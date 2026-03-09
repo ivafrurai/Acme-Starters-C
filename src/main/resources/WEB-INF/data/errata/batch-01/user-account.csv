@@ -1,0 +1,2 @@
+key,enabled,identity,password,username
+user-account-inventor-01,true,"UserIdentity{name: 'Michael', surname: 'Jackson', email: 'mjackson@acme.com'}",,inventor1
