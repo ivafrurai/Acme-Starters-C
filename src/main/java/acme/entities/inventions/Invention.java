@@ -1,6 +1,7 @@
 
 package acme.entities.inventions;
 
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -20,6 +21,7 @@ import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MomentHelper;
 import acme.realms.Inventor;
 import lombok.Getter;
 import lombok.Setter;
@@ -77,18 +79,22 @@ public class Invention extends AbstractEntity {
 	// Derived attributes -----------------------------------------------------
 
 
+	// @Mandatory
 	@Valid
 	@Transient
 	public Double getMonthsActive() {
-		/*
-		 * Duration d;
-		 * d = MomentHelper.computeDuration(startMoment, endMoment);
-		 * result = d.get(ChronoUnit.MONTHS)
-		 * 
-		 */
-		return 0.0;
+
+		if (this.startMoment == null || this.endMoment == null)
+			return null;
+
+		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+
+		return (double) Math.round(months * 10) / 10;
+
 	}
 
+	// @Mandatory
+	@Valid
 	@Transient
 	public Money getCost() {
 
