@@ -82,9 +82,17 @@ strategy-57,AB62-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lor
 
 strategy-58,AB63-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,FALSE,fundraiser-01
 
+#draftMode: False - time interval variations
+strategy-59,TK64-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,FALSE,fundraiser-01
+strategy-60,TK65-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:02,http://lorem.com/ipsum,FALSE,fundraiser-01
+strategy-61,TK66-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2200/12/31 23:59,http://lorem.com/ipsum,FALSE,fundraiser-01
+strategy-62,TK67-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2200/12/31 23:58,http://lorem.com/ipsum,FALSE,fundraiser-01
+strategy-63,TK68-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2200/12/31 23:59,http://lorem.com/ipsum,FALSE,fundraiser-01
+
+
 #fundraiser-variation
 
-strategy-59,AB64-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,fundraiser-02
+strategy-64,AB69-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,fundraiser-02
 
 
 

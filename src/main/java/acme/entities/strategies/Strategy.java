@@ -1,6 +1,7 @@
 
 package acme.entities.strategies;
 
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -17,8 +18,9 @@ import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
-import acme.client.components.validation.ValidMoment.Constraint;
+import acme.client.components.validation.ValidScore;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidStrategy;
 import acme.constraints.ValidText;
@@ -54,12 +56,12 @@ public class Strategy extends AbstractEntity {
 	private String				description;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				startMoment;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				endMoment;
 
@@ -80,14 +82,21 @@ public class Strategy extends AbstractEntity {
 	private StrategyRepository	repository;
 
 
+	@Mandatory
 	@Valid
 	@Transient
 	public Double monthsActive() {
-		//return (double) MomentHelper.computeDuration(this.startMoment, this.endMoment).get(ChronoUnit.MONTHS);
-		return 0.00;
+		if (this.startMoment == null || this.endMoment == null)
+			return null;
+
+		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+		double res = Math.round(months * 100.0) / 100.0;
+
+		return res;
 	}
 
-	@Valid
+	@Mandatory
+	@ValidScore
 	@Transient
 	public Double expectedPercentage() {
 		Double result;
