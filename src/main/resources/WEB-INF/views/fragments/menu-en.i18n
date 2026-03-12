@@ -16,12 +16,6 @@ master.menu.anonymous.favourite-link = Favourite link
 # master.menu.any #############################################################
 master.menu.any = List
 master.menu.any.list-strategies = List strategies
-any.strategy.list.title = Strategy list
-any.strategy.list.ticker = Ticker
-#any.strategy.list.name = Name
-any.strategy.list.name = Name
-any.strategy.list.startMoment = Start Date
-any.strategy.list.endMoment = End Date
 
 # master.menu.administrator ###################################################
 

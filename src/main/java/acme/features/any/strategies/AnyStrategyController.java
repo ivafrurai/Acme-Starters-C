@@ -20,6 +20,7 @@ public class AnyStrategyController extends AbstractController<Any, Strategy> {
 		super.setMediaType(MediaType.TEXT_HTML);
 
 		super.addBasicCommand("list", AnyStrategyListService.class);
+		super.addBasicCommand("show", AnyStrategyShowService.class);
 	}
 
 }
