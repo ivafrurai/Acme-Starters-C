@@ -1,6 +1,7 @@
 
 package acme.entities.sponsorships;
 
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -18,7 +19,11 @@ import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
+import acme.client.components.validation.ValidMoney;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MathHelper;
+import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidSponsorship;
 import acme.constraints.ValidText;
@@ -78,34 +83,37 @@ public class Sponsorship extends AbstractEntity {
 
 	@Transient
 	@Autowired
-	private SponsorshipRepository	sponsorshipRepository;
+	private SponsorshipRepository	repository;
 
 
+	@Mandatory
+	@ValidNumber
 	@Transient
-	@Valid
-	public Double monthsActive() {
-		double result = 0.0;
-		if (this.startMoment != null && this.endMoment != null) {
-			long diff = this.endMoment.getTime() - this.startMoment.getTime();
-			result = diff / (1000.0 * 60 * 60 * 24 * 30.44);
-			result = Math.round(result * 10.0) / 10.0;
-		}
-		return result;
+	public Double getMonthsActive() {
+
+		if (this.startMoment == null || this.endMoment == null)
+			return null;
+
+		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+
+		return MathHelper.roundOff(months, 1);
 	}
 
+	@Mandatory
+	@ValidMoney
 	@Transient
 	public Money getTotalMoney() {
-		Money totalMoney = new Money();
-		totalMoney.setCurrency("EUR");
 
-		Double res;
-		res = this.sponsorshipRepository.totalMoney(this.getId());
+		Double totalAmount = this.repository.totalMoney(this.getId());
 
-		if (res == null)
-			totalMoney.setAmount(0.0);
-		else
-			totalMoney.setAmount(res);
-		return totalMoney;
+		if (totalAmount == null)
+			totalAmount = 0.0;
+
+		Money res = new Money();
+		res.setAmount(totalAmount);
+		res.setCurrency("EUR");
+
+		return res;
 	}
 
 	// Relationships ----------------------------------------------------------
