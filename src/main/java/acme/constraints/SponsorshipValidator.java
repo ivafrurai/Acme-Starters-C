@@ -1,12 +1,16 @@
 
 package acme.constraints;
 
+import java.util.Date;
+
 import javax.validation.ConstraintValidatorContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.components.validation.AbstractValidator;
 import acme.client.components.validation.Validator;
+import acme.client.helpers.MomentHelper;
+import acme.entities.sponsorships.DonationRepository;
 import acme.entities.sponsorships.Sponsorship;
 import acme.entities.sponsorships.SponsorshipRepository;
 
@@ -16,7 +20,10 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private SponsorshipRepository repository;
+	private SponsorshipRepository	repository;
+
+	@Autowired
+	private DonationRepository		donationRepository;
 
 	// ConstraintValidator interface ------------------------------------------
 
@@ -37,6 +44,8 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 			result = true;
 
 		else {
+
+			// Ticker único
 			{
 				boolean uniqueSponsorship;
 				Sponsorship existingSponsorship;
@@ -46,26 +55,31 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 
 				super.state(context, uniqueSponsorship, "ticker", "acme.validation.sponsorship.duplicated-ticker.message");
 			}
+
 			{
-				if (!sponsorship.getDraftMode()) {
+				boolean eurCurrency;
 
-					boolean correctDate;
-					correctDate = sponsorship.getEndMoment().after(sponsorship.getStartMoment());
+				eurCurrency = Boolean.TRUE.equals(sponsorship.getDraftMode()) || this.repository.findDonationsBySponsorShipId(sponsorship.getId()).stream().allMatch(d -> "EUR".equals(d.getMoney().getCurrency()));
 
-					super.state(context, correctDate, "endMoment", "acme.validation.sponsorship.invalid-date.message");
-
-					boolean atLeastOneDonation = true;
-					int existingDonations;
-
-					existingDonations = this.repository.findDonationsSizeBySponsorshipId(sponsorship.getId());
-					atLeastOneDonation = existingDonations >= 1;
-
-					super.state(context, atLeastOneDonation, "*", "acme.validation.sponsorship.missing-donations.message");
-				}
-				result = !super.hasErrors(context);
+				super.state(context, eurCurrency, "money.currency", "acme.validation.sponsorShip.eur-currency.message");
 			}
+			if (!sponsorship.getDraftMode()) {
 
+				Integer donationsCount = this.repository.findDonationsSizeBySponsorshipId(sponsorship.getId());
+				boolean hasDonations = donationsCount != null && donationsCount >= 1;
+
+				super.state(context, hasDonations, "draftMode", "acme.validation.sponsorship.donations.error");
+
+				Date start = sponsorship.getStartMoment();
+				Date end = sponsorship.getEndMoment();
+
+				boolean validDates = start != null && end != null && MomentHelper.isAfter(end, start);
+
+				super.state(context, validDates, "startMoment", "acme.validation.sponsorship.dates.error");
+			}
+			result = !super.hasErrors(context);
 		}
+
 		return result;
 	}
 }

@@ -1,7 +1,6 @@
 
 package acme.entities.sponsorships;
 
-import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -19,10 +18,7 @@ import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
-import acme.client.components.validation.ValidMoment.Constraint;
-import acme.client.components.validation.ValidMoney;
 import acme.client.components.validation.ValidUrl;
-import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidSponsorship;
 import acme.constraints.ValidText;
@@ -59,12 +55,12 @@ public class Sponsorship extends AbstractEntity {
 	private String					description;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date					startMoment;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date					endMoment;
 
@@ -72,16 +68,6 @@ public class Sponsorship extends AbstractEntity {
 	@ValidUrl
 	@Column
 	private String					moreInfo;
-
-	@Mandatory
-	@Valid
-	@Transient
-	private Double					monthsActive;
-
-	@Mandatory
-	@ValidMoney
-	@Transient
-	private Money					totalMoney;
 
 	@Mandatory
 	@Valid
@@ -95,10 +81,16 @@ public class Sponsorship extends AbstractEntity {
 	private SponsorshipRepository	sponsorshipRepository;
 
 
-	@Valid
 	@Transient
-	public Double getMonthsActive() {
-		return (double) MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+	@Valid
+	public Double monthsActive() {
+		double result = 0.0;
+		if (this.startMoment != null && this.endMoment != null) {
+			long diff = this.endMoment.getTime() - this.startMoment.getTime();
+			result = diff / (1000.0 * 60 * 60 * 24 * 30.44);
+			result = Math.round(result * 10.0) / 10.0;
+		}
+		return result;
 	}
 
 	@Transient
