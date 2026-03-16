@@ -1,9 +1,6 @@
 
 package acme.entities.inventions;
 
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -13,6 +10,8 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.datatypes.Money;
@@ -29,6 +28,10 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Invention extends AbstractEntity {
+
+	@Transient
+	@Autowired
+	private InventionRepository	inventionRepository;
 
 	// Serialisation version --------------------------------------------------
 
@@ -77,22 +80,24 @@ public class Invention extends AbstractEntity {
 	@Valid
 	@Transient
 	public Double getMonthsActive() {
-		if (this.startMoment == null || this.endMoment == null)
-			return 0.0;
-
-		LocalDate start = this.startMoment.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-		LocalDate end = this.endMoment.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-
-		long days = ChronoUnit.DAYS.between(start, end);
-
-		double months = days / 30.0;
-
-		return Math.round(months * 10.0) / 10.0;
+		/*
+		 * Duration d;
+		 * d = MomentHelper.computeDuration(startMoment, endMoment);
+		 * result = d.get(ChronoUnit.MONTHS)
+		 * 
+		 */
+		return 0.0;
 	}
 
 	@Transient
 	public Money getCost() {
-		return null;
+
+		Money res = new Money();
+		Double sum = this.inventionRepository.getCostPartsOfInvention(this.getId());
+		res.setAmount(sum);
+		res.setCurrency("EUR");
+
+		return res;
 	}
 
 	// Relationships ----------------------------------------------------------
