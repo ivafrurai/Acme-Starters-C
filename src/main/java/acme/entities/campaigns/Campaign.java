@@ -1,9 +1,6 @@
 
 package acme.entities.campaigns;
 
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -23,6 +20,7 @@ import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MathHelper;
 import acme.constraints.ValidCampaign;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
@@ -88,19 +86,30 @@ public class Campaign extends AbstractEntity {
 	@Valid
 	@Transient
 	public Double getMonthsActive() {
+		Double result;
+		long elapsedMillis;
+		double elapsedMonths;
 
-		LocalDate start = this.startMoment.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+		if (this.startMoment == null || this.endMoment == null)
+			result = null;
+		else {
+			elapsedMillis = this.endMoment.getTime() - this.startMoment.getTime();
+			elapsedMonths = elapsedMillis / (1000. * 60. * 60. * 24. * 30.);
+			result = MathHelper.roundOff(elapsedMonths, 1);
+		}
 
-		LocalDate end = this.endMoment.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-
-		return (double) ChronoUnit.MONTHS.between(start, end);
+		return result;
 	}
 
 	@Valid
 	@ValidNumber(min = 0.01)
 	@Transient
-	public Double effort() {
-		return this.cr.effort(this.getId());
+	public Double getEffort() {
+		Double result;
+
+		result = this.cr == null || this.getId() == 0 ? null : this.cr.effort(this.getId());
+
+		return result;
 	}
 
 	//-Relationships-------------------------------------------------
