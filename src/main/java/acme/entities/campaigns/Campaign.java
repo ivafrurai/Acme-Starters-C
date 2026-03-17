@@ -21,12 +21,13 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
-import acme.client.components.validation.ValidString;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
 import acme.constraints.ValidCampaign;
+import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
-import acme.realms.Spokeperson;
+import acme.realms.Spokesperson;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -48,7 +49,7 @@ public class Campaign extends AbstractEntity {
 	private String				ticker;
 
 	@Mandatory
-	@ValidString
+	@ValidHeader
 	@Column
 	private String				name;
 
@@ -73,8 +74,9 @@ public class Campaign extends AbstractEntity {
 	private String				moreInfo;
 
 	@Mandatory
+	@Valid
 	@Column
-	private boolean				draftMode;
+	private Boolean				draftMode;
 
 	//-Derived Attributes-------------------------------------------------
 
@@ -95,10 +97,10 @@ public class Campaign extends AbstractEntity {
 	}
 
 	@Valid
+	@ValidNumber(min = 0.01)
 	@Transient
 	public Double effort() {
-		Double res = this.cr.effort(this.getId());
-		return res == null ? 0 : res;
+		return this.cr.effort(this.getId());
 	}
 
 	//-Relationships-------------------------------------------------
@@ -107,6 +109,6 @@ public class Campaign extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Spokeperson spokeperson;
+	private Spokesperson spokesperson;
 
 }
