@@ -41,14 +41,14 @@ public class CampaignValidator extends AbstractValidator<ValidCampaign, Campaign
 				existingCampaign = this.cr.findCampaignByTicker(campaign.getTicker());
 				uniqueCampaign = existingCampaign == null || existingCampaign.equals(campaign);
 
-				super.state(context, uniqueCampaign, "ticker", "acme.validation.strategy.duplicated-ticker.message");
+				super.state(context, uniqueCampaign, "ticker", "acme.validation.campaign.duplicated-ticker.message");
 			}
 			{
 				boolean hasMilestone;
 
-				hasMilestone = campaign.isDraftMode() || this.cr.countMilestonesByCampaign(campaign.getId()) != 0;
+				hasMilestone = campaign.getDraftMode() || this.cr.countMilestonesByCampaign(campaign.getId()) != 0;
 
-				super.state(context, hasMilestone, "*", "acme.validation.strategy.tactics.error.message");
+				super.state(context, hasMilestone, "*", "acme.validation.campaign.milestones.error.message");
 			}
 			{
 				Date now = MomentHelper.getBaseMoment();
@@ -61,9 +61,9 @@ public class CampaignValidator extends AbstractValidator<ValidCampaign, Campaign
 				else
 					validTime = false;
 
-				boolean validPublishedCampaign = campaign.isDraftMode() || validTime;
+				boolean validPublishedCampaign = campaign.getDraftMode() || validTime;
 
-				super.state(context, validPublishedCampaign, "startMoment", "acme.validation.strategy.dates.error.message");
+				super.state(context, validPublishedCampaign, "startMoment", "acme.validation.campaign.dates.error.message");
 
 			}
 			result = !super.hasErrors(context);

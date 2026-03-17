@@ -10,6 +10,6 @@ user-account-administrator-03,true,"UserIdentity{name: 'Administrator2', surname
 user-account-fundraiser-01,true,"UserIdentity{name: 'Student', surname: 'Uno', email: 'st1@acme.com'}",fundraiser1,fundraiser1
 user-account-fundraiser-02,true,"UserIdentity{name: 'Student', surname: 'Dos', email: 'st2@acme.com'}",fundraiser2,fundraiser2
 user-account-fundraiser-03,true,"UserIdentity{name: 'Student', surname: 'Tres', email: 'st3@acme.com'}",fundraiser3,fundraiser3
-user-account-spokeperson-01,true,"UserIdentity{name:'Student', surname: 'Uno', email: 'st1@acme.com'}",spokeperson1,spokeperson1
-user-account-spokeperson-02,true,"UserIdentity{name:'Student', surname: 'Dos', email: 'st2@acme.com'}",spokeperson2,spokeperson2
-user-account-spokeperson-03,true,"UserIdentity{name:'Student', surname: 'Tres', email: 'st3@acme.com'}",spokeperson3,spokeperson3
+user-account-spokesperson-01,true,"UserIdentity{name:'Student', surname: 'Uno', email: 'st1@acme.com'}",spokesperson1,spokesperson1
+user-account-spokesperson-02,true,"UserIdentity{name:'Student', surname: 'Dos', email: 'st2@acme.com'}",spokesperson2,spokesperson2
+user-account-spokesperson-03,true,"UserIdentity{name:'Student', surname: 'Tres', email: 'st3@acme.com'}",spokesperson3,spokesperson3

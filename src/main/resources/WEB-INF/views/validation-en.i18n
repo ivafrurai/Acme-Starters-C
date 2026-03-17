@@ -4,3 +4,6 @@ acme.validation.ticker.message 		= The ticker must start with 2 uppercase letter
 acme.validation.strategy.duplicated-ticker.message = There is already a strategy with the same ticker.
 acme.validation.strategy.tactics.error.message = A Strategy cannot be published unless they have at least one tactic.
 acme.validation.strategy.dates.error.message = End date must be after Start date, and Start date must be future.
+acme.validation.campaign.duplicated-ticker.message = There is already a campaign with the same ticker.
+acme.validation.campaign.milestones.error.message = A Campaign cannot be published unless they have at least one milestone.
+acme.validation.campaign.dates.error.message = End date must be after Start date, and Start date must be future.
