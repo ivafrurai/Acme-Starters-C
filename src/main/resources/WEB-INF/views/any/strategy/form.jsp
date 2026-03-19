@@ -12,5 +12,6 @@
 	<acme:form-url code="any.strategy.form.moreInfo" path="moreInfo"/>
 	
 	<acme:button code="any.strategy.form.button.tactics" action="/any/tactic/list?strategyId=${id}"/>
+	<acme:button code="any.strategy.form.button.fundraiser" action="/any/fundraiser/show?id=${fundraiserId}"/>
 	
 </acme:form>
