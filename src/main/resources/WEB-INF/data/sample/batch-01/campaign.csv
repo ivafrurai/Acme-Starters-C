@@ -1,88 +1,88 @@
-key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:spokeperson
+key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:spokesperson
 #base entity
-campaign-00,AB00-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
+campaign-00,AB00-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
 
 #ticker-variations
 
-campaign-01,AB12-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-02,XY99-Test01,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-03,ZZ00-1234567890,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-04,MN44-_Alpha,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-05,ST01-Valid9,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
+campaign-01,AB12-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-02,XY99-Test01,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-03,ZZ00-1234567890,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-04,MN44-_Alpha,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-05,ST01-Valid9,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
 
 
 #name-variations
 
-campaign-06,AB10-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-07,AB11-abcde,"Lor","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-08,AB13-abcde,"L","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-09,AB14-abcde,"Lo","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-10,AB15-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-11,AB16-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-12,AB17-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-13,AB18-abcde,"โลเร็ม อิปซัม","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-14,AB19-abcde,"لوريم إيبسوم","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-15,AB20-abcde,"洛伦·伊普森","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-16,AB21-abcde,"<marquee>Hacked</marquee>","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-17,AB22-abcde,"<script>alert(‘Hacked!’);</script>","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-18,AB23-abcde,"' or 'A' = 'A ","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
+campaign-06,AB10-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-07,AB11-abcde,"Lor","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-08,AB13-abcde,"L","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-09,AB14-abcde,"Lo","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-10,AB15-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-11,AB16-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-12,AB17-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-13,AB18-abcde,"โลเร็ม อิปซัม","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-14,AB19-abcde,"لوريم إيبسوم","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-15,AB20-abcde,"洛伦·伊普森","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-16,AB21-abcde,"<marquee>Hacked</marquee>","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-17,AB22-abcde,"<script>alert(‘Hacked!’);</script>","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-18,AB23-abcde,"' or 'A' = 'A ","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
 
 #description-variations
 
-campaign-19,AB24-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-20,AB25-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lor",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-21,AB26-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","L",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-22,AB27-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lo",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-23,AB28-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-24,AB29-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-25,AB30-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-26,AB31-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","โลเร็ม อิปซัม",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-27,AB32-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","لوريم إيبسوم",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-28,AB33-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","洛伦·伊普森",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-29,AB34-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","<marquee>Hacked</marquee>",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-30,AB35-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","<script>alert(‘Hacked!’);</script>",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-31,AB36-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","' or 'A' = 'A ",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
+campaign-19,AB24-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-20,AB25-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lor",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-21,AB26-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","L",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-22,AB27-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lo",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-23,AB28-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-24,AB29-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-25,AB30-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-26,AB31-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","โลเร็ม อิปซัม",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-27,AB32-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","لوريم إيبسوم",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-28,AB33-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","洛伦·伊普森",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-29,AB34-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","<marquee>Hacked</marquee>",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-30,AB35-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","<script>alert(‘Hacked!’);</script>",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-31,AB36-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","' or 'A' = 'A ",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
 
 #startMoment-variations
 
-campaign-32,AB37-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/01 0:01,2025/02/01 0:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-33,AB38-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/01 0:01,2025/02/01 0:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-34,AB39-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2200/12/31 23:58,2025/02/01 0:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-35,AB40-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2200/12/31 23:59,2025/02/01 0:00,http://lorem.com/ipsum,TRUE,spokeperson-01
+campaign-32,AB37-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/01 0:01,2025/02/01 0:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-33,AB38-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/01 0:01,2025/02/01 0:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-34,AB39-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2200/12/31 23:58,2025/02/01 0:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-35,AB40-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2200/12/31 23:59,2025/02/01 0:00,http://lorem.com/ipsum,TRUE,spokesperson-01
 
 #endMoment-variations
 
-campaign-36,AB41-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/01 0:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-37,AB42-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/01 0:01,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-38,AB43-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2200/12/31 23:58,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-39,AB44-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokeperson-01
+campaign-36,AB41-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/01 0:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-37,AB42-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/01 0:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-38,AB43-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2200/12/31 23:58,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-39,AB44-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2200/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
 
 #moreInfo-variations
 
-campaign-40,AB45-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-01
-campaign-41,AB46-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://a.b,TRUE,spokeperson-01
-campaign-42,AB47-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/",TRUE,spokeperson-01
-campaign-43,AB48-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/X",TRUE,spokeperson-01
-campaign-44,AB49-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://www.lorem-ipsum.org,TRUE,spokeperson-01
-campaign-45,AB50-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,https://www.lorem-ipsum.org,TRUE,spokeperson-01
-campaign-46,AB51-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://www.lorem-ipsum.org/dolor/sit.html,TRUE,spokeperson-01
-campaign-47,AB52-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://www.lorem-ipsum.org/dolor/sit.html#dolor,TRUE,spokeperson-01
-campaign-48,AB53-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org?a=1&b=2,TRUE,spokeperson-01
-campaign-49,AB54-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org?,TRUE,spokeperson-01
-campaign-50,AB55-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org?a,TRUE,spokeperson-01
-campaign-51,AB56-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org?a&b,TRUE,spokeperson-01
-campaign-52,AB57-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org/,TRUE,spokeperson-01
-campaign-53,AB58-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org/a,TRUE,spokeperson-01
-campaign-54,AB59-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org/a/b,TRUE,spokeperson-01
-campaign-55,AB60-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org/a/b?,TRUE,spokeperson-01
-campaign-56,AB61-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org/a/b?a&b,TRUE,spokeperson-01
-campaign-57,AB62-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,,TRUE,spokeperson-01
+campaign-40,AB45-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-41,AB46-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://a.b,TRUE,spokesperson-01
+campaign-42,AB47-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/",TRUE,spokesperson-01
+campaign-43,AB48-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/X",TRUE,spokesperson-01
+campaign-44,AB49-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://www.lorem-ipsum.org,TRUE,spokesperson-01
+campaign-45,AB50-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,https://www.lorem-ipsum.org,TRUE,spokesperson-01
+campaign-46,AB51-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://www.lorem-ipsum.org/dolor/sit.html,TRUE,spokesperson-01
+campaign-47,AB52-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://www.lorem-ipsum.org/dolor/sit.html#dolor,TRUE,spokesperson-01
+campaign-48,AB53-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org?a=1&b=2,TRUE,spokesperson-01
+campaign-49,AB54-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org?,TRUE,spokesperson-01
+campaign-50,AB55-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org?a,TRUE,spokesperson-01
+campaign-51,AB56-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org?a&b,TRUE,spokesperson-01
+campaign-52,AB57-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org/,TRUE,spokesperson-01
+campaign-53,AB58-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org/a,TRUE,spokesperson-01
+campaign-54,AB59-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org/a/b,TRUE,spokesperson-01
+campaign-55,AB60-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org/a/b?,TRUE,spokesperson-01
+campaign-56,AB61-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://example.org/a/b?a&b,TRUE,spokesperson-01
+campaign-57,AB62-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,,TRUE,spokesperson-01
 
 #draftMode-variation
 
-campaign-58,AB63-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,FALSE,spokeperson-01
+campaign-58,AB63-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,FALSE,spokesperson-01
 
-#spokeperson-variation
+#spokesperson-variation
 
-campaign-59,AB64-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokeperson-02
+campaign-59,AB64-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/09 10:00,2025/01/10 10:00,http://lorem.com/ipsum,TRUE,spokesperson-02
 
