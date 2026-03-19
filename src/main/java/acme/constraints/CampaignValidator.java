@@ -55,17 +55,19 @@ public class CampaignValidator extends AbstractValidator<ValidCampaign, Campaign
 				Date start = campaign.getStartMoment();
 				Date end = campaign.getEndMoment();
 				boolean validTime;
+				boolean validPublishedCampaign;
 
 				if (start != null && end != null)
-					validTime = MomentHelper.isAfter(campaign.getStartMoment(), now) && MomentHelper.isAfter(campaign.getEndMoment(), campaign.getStartMoment());
+					validTime = MomentHelper.isAfter(start, now) && MomentHelper.isAfter(end, start);
 				else
 					validTime = false;
 
-				super.state(context, validTime, "startMoment", "acme.validation.campaign.dates.error.message");
+				validPublishedCampaign = Boolean.TRUE.equals(campaign.getDraftMode()) || validTime;
 
+				super.state(context, validPublishedCampaign, "startMoment", "acme.validation.campaign.dates.error.message");
 			}
 			result = !super.hasErrors(context);
-		}
+			}
 
 		return result;
 	}
