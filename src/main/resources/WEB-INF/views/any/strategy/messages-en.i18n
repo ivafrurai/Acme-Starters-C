@@ -7,6 +7,7 @@ any.strategy.form.description = Description:
 any.strategy.form.startMoment = Start Date:
 any.strategy.form.endMoment = End Date:
 any.strategy.form.moreInfo = More info:
+any.strategy.form.button.tactics = View Tactics
 
 any.strategy.list.ticker = Ticker
 any.strategy.list.name = Name

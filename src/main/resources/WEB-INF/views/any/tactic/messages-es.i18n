@@ -1,0 +1,8 @@
+any.tactic.list.title = Lista de Tácticas
+any.tactic.list.label.name = Nombre
+any.tactic.list.label.notes = Notas
+any.tactic.list.label.percentage = Porcentaje
+any.tactic.list.label.kind = Tipo
+
+
+any.tactic.form.button.return = Volver a la lista
