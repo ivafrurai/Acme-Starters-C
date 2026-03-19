@@ -20,6 +20,7 @@ import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidScore;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MathHelper;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidStrategy;
@@ -90,7 +91,7 @@ public class Strategy extends AbstractEntity {
 			return null;
 
 		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
-		double res = Math.round(months * 100.0) / 100.0;
+		double res = MathHelper.roundOff(months, 1);
 
 		return res;
 	}
