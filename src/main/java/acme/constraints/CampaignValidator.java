@@ -46,7 +46,7 @@ public class CampaignValidator extends AbstractValidator<ValidCampaign, Campaign
 			{
 				boolean hasMilestone;
 
-				hasMilestone = campaign.getDraftMode() || this.cr.countMilestonesByCampaign(campaign.getId()) != 0;
+				hasMilestone = Boolean.TRUE.equals(campaign.getDraftMode()) || this.cr.countMilestonesByCampaign(campaign.getId()) != 0;
 
 				super.state(context, hasMilestone, "*", "acme.validation.campaign.milestones.error.message");
 			}
@@ -61,9 +61,7 @@ public class CampaignValidator extends AbstractValidator<ValidCampaign, Campaign
 				else
 					validTime = false;
 
-				boolean validPublishedCampaign = campaign.getDraftMode() || validTime;
-
-				super.state(context, validPublishedCampaign, "startMoment", "acme.validation.campaign.dates.error.message");
+				super.state(context, validTime, "startMoment", "acme.validation.campaign.dates.error.message");
 
 			}
 			result = !super.hasErrors(context);

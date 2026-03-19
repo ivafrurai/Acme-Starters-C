@@ -1,0 +1,35 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2026 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+spokesperson.campaign.form.title = Campaign form
+spokesperson.campaign.list.title = Listing of my campaigns
+
+spokesperson.campaign.form.label.ticker = Ticker:
+spokesperson.campaign.form.label.name = Name:
+spokesperson.campaign.form.label.description = Description:
+spokesperson.campaign.form.label.start-moment = Start moment:
+spokesperson.campaign.form.label.end-moment = End moment:
+spokesperson.campaign.form.label.more-info = More info: (Optional)
+spokesperson.campaign.form.label.draft-mode = Draft mode:
+spokesperson.campaign.form.label.months-active = Months active:
+spokesperson.campaign.form.label.effort = Effort:
+
+spokesperson.campaign.form.button.milestones = Milestones
+spokesperson.campaign.form.button.update = Update
+spokesperson.campaign.form.button.delete = Delete
+spokesperson.campaign.form.button.publish = Publish
+spokesperson.campaign.form.button.create = Create
+
+spokesperson.campaign.list.label.ticker = Ticker
+spokesperson.campaign.list.label.start-moment = Start
+spokesperson.campaign.list.label.end-moment = End
+spokesperson.campaign.list.label.name = Name
+
+spokesperson.campaign.list.button.create = Create
