@@ -2,3 +2,4 @@ key,enabled,identity,password,username
 user-account-sponsor-01,false,,,
 
 user-account-fundraiser-01,true,"UserIdentity{name: 'J', surname:'L', email:'cgiacme.com'}",fundraiser1,fundraiser1
+user-account-fundraiser-02,false,,,
