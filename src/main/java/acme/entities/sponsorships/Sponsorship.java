@@ -19,9 +19,10 @@ import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
-import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidMoney;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MathHelper;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidSponsorship;
@@ -59,12 +60,12 @@ public class Sponsorship extends AbstractEntity {
 	private String					description;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date					startMoment;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date					endMoment;
 
@@ -75,16 +76,6 @@ public class Sponsorship extends AbstractEntity {
 
 	@Mandatory
 	@Valid
-	@Transient
-	private Double					monthsActive;
-
-	@Mandatory
-	@ValidMoney
-	@Transient
-	private Money					totalMoney;
-
-	@Mandatory
-	@Valid
 	@Column
 	private Boolean					draftMode;
 
@@ -92,28 +83,37 @@ public class Sponsorship extends AbstractEntity {
 
 	@Transient
 	@Autowired
-	private SponsorshipRepository	sponsorshipRepository;
+	private SponsorshipRepository	repository;
 
 
-	@Valid
+	@Mandatory
+	@ValidNumber
 	@Transient
 	public Double getMonthsActive() {
-		return (double) MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+
+		if (this.startMoment == null || this.endMoment == null)
+			return null;
+
+		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+
+		return MathHelper.roundOff(months, 1);
 	}
 
+	@Mandatory
+	@ValidMoney
 	@Transient
 	public Money getTotalMoney() {
-		Money totalMoney = new Money();
-		totalMoney.setCurrency("EUR");
 
-		Double res;
-		res = this.sponsorshipRepository.totalMoney(this.getId());
+		Double totalAmount = this.repository.totalMoney(this.getId());
 
-		if (res == null)
-			totalMoney.setAmount(0.0);
-		else
-			totalMoney.setAmount(res);
-		return totalMoney;
+		if (totalAmount == null)
+			totalAmount = 0.0;
+
+		Money res = new Money();
+		res.setAmount(totalAmount);
+		res.setCurrency("EUR");
+
+		return res;
 	}
 
 	// Relationships ----------------------------------------------------------

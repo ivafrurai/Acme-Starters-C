@@ -8,15 +8,11 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-# master.menu.anonymous #######################################################
-
-master.menu.anonymous = Anonymous
-master.menu.anonymous.favourite-link = Favourite link
-
 # master.menu.any #############################################################
-master.menu.any = List
+master.menu.any = Any
 master.menu.any.list-strategies = List strategies
 master.menu.any.list-campaigns = List campaigns
+master.menu.any.list-sponsorships = List sponsorships
 
 # master.menu.administrator ###################################################
 
@@ -26,15 +22,11 @@ master.menu.administrator.populate-db-initial = Populate DB (initial)
 master.menu.administrator.populate-db-sample = Populate DB (samples)
 master.menu.administrator.shut-system-down = Shut system down
 
-# master.menu.provider ########################################################
 
-master.menu.provider = Provider
-master.menu.provider.favourite-link = Favourite link
+# master.menu.sponsor #########################################################
 
-# master.menu.consumer ##########################################################
-
-master.menu.consumer = Consumer
-master.menu.consumer.favourite-link = Favourite link
+master.menu.sponsor                        = Sponsor
+master.menu.sponsor.list-my-sponsorships   = My sponsorships
 
 # master.menu.spokesperson ####################################################
 
@@ -45,9 +37,17 @@ master.menu.spokesperson.list-my-campaigns = My campaigns
 
 master.menu.user-account = Account
 master.menu.user-account.general-profile = General profile
-master.menu.user-account.become-provider = Become a provider
-master.menu.user-account.provider-profile = Provider profile
-master.menu.user-account.become-consumer = Become a consumer
-master.menu.user-account.consumer-profile = Consumer profile
 master.menu.user-account.become-spokesperson = Become a spokesperson
 master.menu.user-account.spokesperson-profile = Spokesperson profile
+master.menu.user-account.become-fundraiser = Become a fundraiser
+master.menu.user-account.fundraiser-profile = Fundraiser profile
+master.menu.user-account.become-sponsor = Become a sponsor
+master.menu.user-account.sponsor-profile = Sponsor profile
+
+
+
+
+# master.menu.fundraiser #########################################################
+
+master.menu.fundraiser = Fundraiser
+master.menu.fundraiser.list-my-strategies = My Strategies

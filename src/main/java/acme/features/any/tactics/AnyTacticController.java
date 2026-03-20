@@ -18,6 +18,6 @@ public class AnyTacticController extends AbstractController<Any, Tactic> {
 		super.setMediaType(MediaType.TEXT_HTML);
 
 		super.addBasicCommand("list", AnyTacticListService.class);
+		super.addBasicCommand("show", AnyTacticShowService.class);
 	}
-
 }

@@ -20,6 +20,7 @@ import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidScore;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MathHelper;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidStrategy;
@@ -85,27 +86,27 @@ public class Strategy extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@Transient
-	public Double monthsActive() {
+	public Double getMonthsActive() {
 		if (this.startMoment == null || this.endMoment == null)
 			return null;
 
 		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
-		double res = Math.round(months * 100.0) / 100.0;
 
-		return res;
+		return MathHelper.roundOff(months, 1);
 	}
 
 	@Mandatory
 	@ValidScore
 	@Transient
-	public Double expectedPercentage() {
+	public Double getExpectedPercentage() {
 		Double result;
 		Double expectedPercentage;
 
 		expectedPercentage = this.repository.expectedPercentage(this.getId());
 		result = expectedPercentage == null ? 0 : expectedPercentage.doubleValue();
 
-		return result;
+		return MathHelper.roundOff(result, 1);
+
 	}
 
 	// Relationships ----------------------------------------------------------

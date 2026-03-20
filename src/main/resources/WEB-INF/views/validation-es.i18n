@@ -10,3 +10,7 @@ acme.validation.sponsorship.invalid-date.message = La fecha final del patrocinio
 acme.validation.campaign.duplicated-ticker.message = Ya existe una campaña con este ticker.
 acme.validation.campaign.milestones.error.message = Una campaña no puede ser publicada sin al menos un hito.
 acme.validation.campaign.dates.error.message = La fecha de finalizacion debe ser posterior a la fecha de inicio, y la fecha de inicio debe de ser futura.
+acme.validation.strategy.startMoment.future = La fecha de inicio debe estar en el futuro
+acme.validation.strategy.endMoment.future = La fecha de fin debe estar en el futuro
+acme.validation.strategy.dates.error = Las fechas de inicio y fin deben definir un intervalo válido de tiempo
+acme.validation.tactic.sumPercentages = La suma de los porcentajes de las tácticas tiene que ser menor o igual que 100.00.

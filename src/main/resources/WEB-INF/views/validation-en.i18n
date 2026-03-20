@@ -10,3 +10,7 @@ acme.validation.sponsorship.duplicated-ticker.message = The ticker is already us
 acme.validation.campaign.duplicated-ticker.message = There is already a campaign with the same ticker.
 acme.validation.campaign.milestones.error.message = A Campaign cannot be published unless they have at least one milestone.
 acme.validation.campaign.dates.error.message = End date must be after Start date, and Start date must be future.
+acme.validation.strategy.startMoment.future = Start date must be in the future
+acme.validation.strategy.endMoment.future = End date must be in the future
+acme.validation.strategy.dates.error = Start/end moments must define a valid time interval
+acme.validation.tactic.sumPercentages = The sum of the percentages of the tactics must be lower or equal than 100.00
