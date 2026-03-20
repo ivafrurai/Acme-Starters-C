@@ -13,3 +13,6 @@ user-account-fundraiser-03,true,"UserIdentity{name: 'Student', surname: 'Tres', 
 user-account-spokesperson-01,true,"UserIdentity{name:'Student', surname: 'Uno', email: 'st1@acme.com'}",spokesperson1,spokesperson1
 user-account-spokesperson-02,true,"UserIdentity{name:'Student', surname: 'Dos', email: 'st2@acme.com'}",spokesperson2,spokesperson2
 user-account-spokesperson-03,true,"UserIdentity{name:'Student', surname: 'Tres', email: 'st3@acme.com'}",spokesperson3,spokesperson3
+user-account-sponsor-01,true,"UserIdentity{name: 'Student', surname: 'Uno', email: 'st1@acme.com'}",sponsor1,sponsor1
+user-account-sponsor-02,true,"UserIdentity{name: 'Student', surname: 'Dos', email: 'st2@acme.com'}",sponsor2,sponsor2
+user-account-sponsor-03,true,"UserIdentity{name: 'Student', surname: 'Tres', email: 's@acme.com'}",sponsor3,sponsor3

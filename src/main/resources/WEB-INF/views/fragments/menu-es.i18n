@@ -17,6 +17,13 @@ master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.any = Listar
 master.menu.any.list-strategies = Listar estrategias
 master.menu.any.list-campaigns = Ver campañas
+master.menu.any.list-sponsorships = Listar patrocinios
+
+# master.menu.sponsor #########################################################
+
+master.menu.sponsor                        = Patrocinador
+master.menu.sponsor.list-my-sponsorships   = Mis patrocínios
+
 
 # master.menu.administrator ###################################################
 
@@ -53,6 +60,8 @@ master.menu.user-account.become-spokesperson = Hazte portavoz
 master.menu.user-account.spokesperson-profile = Perfil de portavoz
 master.menu.user-account.become-fundraiser = Hazte recaudador
 master.menu.user-account.fundraiser-profile = Perfil de recaudador
+master.menu.user-account.become-sponsor = Hazte patrocinador
+master.menu.user-account.sponsor-profile = Perfil de patrocinador
 
 
 # master.menu.fundraiser #########################################################

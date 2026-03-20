@@ -8,15 +8,11 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-# master.menu.anonymous #######################################################
-
-master.menu.anonymous = Anonymous
-master.menu.anonymous.favourite-link = Favourite link
-
 # master.menu.any #############################################################
 master.menu.any = List
 master.menu.any.list-strategies = List strategies
 master.menu.any.list-campaigns = List campaigns
+master.menu.sponsor.list-my-sponsorships   = My sponsorships
 
 # master.menu.administrator ###################################################
 
@@ -36,6 +32,11 @@ master.menu.provider.favourite-link = Favourite link
 master.menu.consumer = Consumer
 master.menu.consumer.favourite-link = Favourite link
 
+# master.menu.sponsor #########################################################
+
+master.menu.sponsor                        = Sponsor
+master.menu.sponsor.list-my-sponsorships   = My sponsorships
+
 # master.menu.spokesperson ####################################################
 
 master.menu.spokesperson = Spokesperson
@@ -53,6 +54,10 @@ master.menu.user-account.become-spokesperson = Become a spokesperson
 master.menu.user-account.spokesperson-profile = Spokesperson profile
 master.menu.user-account.become-fundraiser = Become a fundraiser
 master.menu.user-account.fundraiser-profile = Fundraiser profile
+master.menu.user-account.become-sponsor = Become a sponsor
+master.menu.user-account.sponsor-profile = Sponsor profile
+
+
 
 
 # master.menu.fundraiser #########################################################
