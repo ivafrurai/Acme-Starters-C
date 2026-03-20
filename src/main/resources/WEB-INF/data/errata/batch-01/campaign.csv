@@ -1,0 +1,47 @@
+key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:spokesperson
+
+#base entity
+campaign-00,,,,,,,TRUE,
+
+#ticker - standard variations
+campaign-01,,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-02,T00-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-03,TKK00-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-04,TK0-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-05,TK000-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-06,TK00-abcd,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-07,TK00-abcdefghijklmnop,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-08,A&B&C,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+
+#name - standard variations
+campaign-09,TK01-abcde,,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-10,TK02-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+
+#description - standard variations
+campaign-11,TK03-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing",,2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-12,TK04-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+
+#startMoment - standard variations
+campaign-13,TK05-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",1999/12/31 23:59,2025/01/10 10:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-14,TK06-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2201/01/01 00:00,2025/01/10 10:01,http://lorem.com/ipsum,TRUE,spokesperson-01
+
+#endMoment - standard variations
+campaign-15,TK07-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,1999/12/31 23:59,http://lorem.com/ipsum,TRUE,spokesperson-01
+campaign-16,TK08-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2201/01/01 00:00,http://lorem.com/ipsum,TRUE,spokesperson-01
+
+#moreInfo - standard variations
+campaign-17,TK09-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://,TRUE,spokesperson-01
+campaign-18,TK10-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,ftp://,TRUE,spokesperson-01
+campaign-19,TK11-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://a,TRUE,spokesperson-01
+
+#draftMode - standard variations
+campaign-20,TK12-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,,spokesperson-01
+
+#draftMode - publication checks
+campaign-21,TK13-abcde,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,FALSE,spokesperson-01
+campaign-22,TK14-abcde,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 09:59,http://lorem.com/ipsum,FALSE,spokesperson-01
+campaign-23,TK15-abcde,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing",1999/12/31 23:59,2200/12/31 23:59,http://lorem.com/ipsum,FALSE,spokesperson-01
+
+#spokesperson - standard variations
+campaign-24,TK16-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/10 10:00,2025/01/10 10:01,http://lorem.com/ipsum,TRUE,
+#spokesperson - no singular variations
