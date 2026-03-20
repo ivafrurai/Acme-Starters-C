@@ -21,3 +21,5 @@ fundraiser.strategy.form.button.update = Update
 fundraiser.strategy.form.button.create = Create
 fundraiser.strategy.form.button.publish = Publish
 fundraiser.strategy.list.button.create = Create Strategy
+
+fundraiser.strategy.form.button.tactics = View Tactics

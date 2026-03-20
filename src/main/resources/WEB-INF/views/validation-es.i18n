@@ -13,3 +13,4 @@ acme.validation.campaign.dates.error.message = La fecha de finalizacion debe ser
 acme.validation.strategy.startMoment.future = La fecha de inicio debe estar en el futuro
 acme.validation.strategy.endMoment.future = La fecha de fin debe estar en el futuro
 acme.validation.strategy.dates.error = Las fechas de inicio y fin deben definir un intervalo válido de tiempo
+acme.validation.tactic.sumPercentages = La suma de los porcentajes de las tácticas tiene que ser menor o igual que 100.00.
