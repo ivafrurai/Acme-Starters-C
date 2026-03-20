@@ -1,0 +1,21 @@
+key,key:userAccount,cv,achievements,licensed
+
+#base entity
+spokesperson-00,,,,
+
+#cv - standard variations
+spokesperson-01,user-account-spokesperson-01,,"Achievement 1",true
+spokesperson-02,user-account-spokesperson-01,"L","Achievement 1",true
+spokesperson-03,user-account-spokesperson-01,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem","Achievement 1",true
+
+#achievements - standard variations
+spokesperson-04,user-account-spokesperson-01,"Cv 1",,true
+spokesperson-05,user-account-spokesperson-01,"Cv 1","L",true
+spokesperson-06,user-account-spokesperson-01,"Cv 1","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem",true
+
+#licensed - standard variations
+spokesperson-07,user-account-spokesperson-01,"Cv 1","Achievement 1",
+
+#userAccount - standard variations
+spokesperson-08,,"Cv 1","Achievement 1",true
+spokesperson-09,user-account-fundraiser-01,"Cv 1","Achievement 1",true

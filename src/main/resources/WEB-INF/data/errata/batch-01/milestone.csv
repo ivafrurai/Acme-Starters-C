@@ -1,0 +1,26 @@
+key,title,achievements,effort,kind,key:campaign
+
+#base entity
+milestone-00,,,,,
+
+#title - standard variations
+milestone-01,,"Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-00
+milestone-02,"L","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-00
+milestone-03,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-00
+
+#achievements - standard variations
+milestone-04,"Lorem ipsum dolor sit amet, consectetur adipiscing",,50,TEASER,campaign-00
+milestone-05,"Lorem ipsum dolor sit amet, consectetur adipiscing","L",50,TEASER,campaign-00
+milestone-06,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",50,TEASER,campaign-00
+
+#effort - standard variations
+milestone-07,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",-0.01,TEASER,campaign-00
+milestone-08,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",0.00,TEASER,campaign-00
+
+#kind - standard variations
+milestone-09,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",50,,campaign-00
+#kind - no singular variations
+
+#campaign - standard variations
+milestone-11,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,
+#campaign - no singular variations
