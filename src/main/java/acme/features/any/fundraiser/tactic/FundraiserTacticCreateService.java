@@ -37,7 +37,8 @@ public class FundraiserTacticCreateService extends AbstractService<Fundraiser, T
 	public void authorise() {
 		boolean status;
 
-		status = this.tactic.getStrategy() != null && //
+		status = this.tactic != null && //
+			this.tactic.getStrategy() != null && //
 			this.tactic.getStrategy().getFundraiser().isPrincipal() && //
 			this.tactic.getStrategy().isDraftMode();
 
@@ -54,10 +55,12 @@ public class FundraiserTacticCreateService extends AbstractService<Fundraiser, T
 		super.validateObject(this.tactic);
 		{
 			boolean validPercentage;
-			Double currentPercentage;
+			Double strategyPercentage;
+			Double tacticPercentage;
 
-			currentPercentage = this.tactic.getStrategy().getExpectedPercentage();
-			validPercentage = currentPercentage + this.tactic.getExpectedPercentage() <= 100;
+			strategyPercentage = this.tactic.getStrategy().getExpectedPercentage();
+			tacticPercentage = this.tactic.getExpectedPercentage() == null ? 0.00 : this.tactic.getExpectedPercentage();
+			validPercentage = strategyPercentage + tacticPercentage <= 100;
 			super.state(validPercentage, "expectedPercentage", "acme.validation.tactic.sumPercentages");
 		}
 	}
