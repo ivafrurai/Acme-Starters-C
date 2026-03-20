@@ -86,27 +86,27 @@ public class Strategy extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@Transient
-	public Double monthsActive() {
+	public Double getMonthsActive() {
 		if (this.startMoment == null || this.endMoment == null)
 			return null;
 
 		Double months = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
-		double res = MathHelper.roundOff(months, 1);
 
-		return res;
+		return MathHelper.roundOff(months, 1);
 	}
 
 	@Mandatory
 	@ValidScore
 	@Transient
-	public Double expectedPercentage() {
+	public Double getExpectedPercentage() {
 		Double result;
 		Double expectedPercentage;
 
 		expectedPercentage = this.repository.expectedPercentage(this.getId());
 		result = expectedPercentage == null ? 0 : expectedPercentage.doubleValue();
 
-		return result;
+		return MathHelper.roundOff(result, 1);
+
 	}
 
 	// Relationships ----------------------------------------------------------
