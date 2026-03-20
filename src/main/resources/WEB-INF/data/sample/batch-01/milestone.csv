@@ -1,0 +1,48 @@
+key,title,achievements,effort,kind,key:campaign
+#base-entity
+milestone-00,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-00
+
+#title-variations
+
+milestone-01,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-00
+milestone-02,"L","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-00
+milestone-03,"Lo","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-00
+milestone-04,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-58
+milestone-05,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-00
+milestone-06,"โลเร็ม อิปซัม","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-00
+milestone-07,"لوريم إيبسوم","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-00
+milestone-08,"洛伦·伊普森","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-00
+milestone-09,"<marquee>Hacked</marquee>","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-00
+milestone-10,"<script>alert(‘Hacked!’);</script>","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-00
+milestone-11,"' or 'A' = 'A ","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-00
+
+#achievements-variations
+
+milestone-12,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",50,TEASER,campaign-00
+milestone-13,"Lorem ipsum dolor sit amet, consectetur adipiscing","L",50,TEASER,campaign-00
+milestone-14,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lo",50,TEASER,campaign-00
+milestone-15,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",50,TEASER,campaign-00
+milestone-16,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",50,TEASER,campaign-00
+milestone-17,"Lorem ipsum dolor sit amet, consectetur adipiscing","โลเร็ม อิปซัม",50,TEASER,campaign-00
+milestone-18,"Lorem ipsum dolor sit amet, consectetur adipiscing","لوريم إيبسوم",50,TEASER,campaign-00
+milestone-19,"Lorem ipsum dolor sit amet, consectetur adipiscing","洛伦·伊普森",50,TEASER,campaign-00
+milestone-20,"Lorem ipsum dolor sit amet, consectetur adipiscing","<marquee>Hacked</marquee>",50,TEASER,campaign-00
+milestone-21,"Lorem ipsum dolor sit amet, consectetur adipiscing","<script>alert(‘Hacked!’);</script>",50,TEASER,campaign-00
+milestone-22,"Lorem ipsum dolor sit amet, consectetur adipiscing","' or 'A' = 'A ",50,TEASER,campaign-00
+
+#effort-variations
+
+milestone-23,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",50.00,TEASER,campaign-00
+milestone-24,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",0.10,TEASER,campaign-00
+milestone-25,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",0.01,TEASER,campaign-00
+milestone-26,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",99.99,TEASER,campaign-00
+milestone-27,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",100.00,TEASER,campaign-00
+milestone-28,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-00
+
+#kind-variations
+milestone-29,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",50,ENGAGING,campaign-00
+milestone-30,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",50,CONVERSION,campaign-00
+
+#campaign-variations
+milestone-31,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-01
+milestone-32,"Lorem ipsum dolor sit amet, consectetur adipiscing","Lorem ipsum dolor sit amet, consectetur adipiscing",50,TEASER,campaign-15

@@ -1,0 +1,17 @@
+any.strategy.form.title = Strategy details
+any.strategy.list.title = Strategy list
+
+any.strategy.form.ticker = Ticker:
+any.strategy.form.name = Name:
+any.strategy.form.description = Description:
+any.strategy.form.startMoment = Start Date:
+any.strategy.form.endMoment = End Date:
+any.strategy.form.moreInfo = More info:
+any.strategy.form.button.tactics = View Tactics
+
+any.strategy.form.button.fundraiser = View Fundraiser Profile
+
+any.strategy.list.ticker = Ticker
+any.strategy.list.name = Name
+any.strategy.list.startMoment = Start Date
+any.strategy.list.endMoment = End Date

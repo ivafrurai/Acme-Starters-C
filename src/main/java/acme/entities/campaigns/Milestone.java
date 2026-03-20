@@ -1,5 +1,5 @@
 
-package acme.entities;
+package acme.entities.campaigns;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +9,8 @@ import javax.validation.Valid;
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidNumber;
+import acme.constraints.ValidHeader;
+import acme.constraints.ValidText;
 import acme.datatypes.MilestoneKind;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,26 +20,31 @@ import lombok.Setter;
 @Setter
 public class Milestone extends AbstractEntity {
 
-	// Serialisation Identifier
+	// Serialisation Identifier-------------------------------------------------
+
 	private static final long	serialVersionUID	= 1L;
-	// Attributes
+
+	// Attributes-------------------------------------------------
+
 	@Mandatory
-	//@ValidHeader
+	@ValidHeader
 	@Column
 	private String				title;
 	@Mandatory
-	//@ValidText
+	@ValidText
 	@Column
 	private String				achievements;
 	@Mandatory
-	@ValidNumber
+	@ValidNumber(min = 0.01)
 	@Column
 	private Double				effort;
 	@Mandatory
 	@Valid
 	@Column
 	private MilestoneKind		kind;
-	// Relationship
+
+	// Relationship-------------------------------------------------
+
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)

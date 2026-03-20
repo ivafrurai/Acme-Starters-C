@@ -3,31 +3,35 @@ package acme.realms;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractRole;
 import acme.client.components.validation.Mandatory;
-import acme.client.components.validation.ValidString;
+import acme.constraints.ValidText;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-public class Spokeperson extends AbstractRole {
+public class Spokesperson extends AbstractRole {
 
-	// Serialisation Identifier
+	// Serialisation Identifier-------------------------------------------------
+
 	private static final long	serialVersionUID	= 1L;
-	// Attributes
+
+	// Attributes-------------------------------------------------
+
 	@Mandatory
-	@ValidString
+	@ValidText
 	@Column
 	private String				cv;
 	@Mandatory
-	@ValidString
+	@ValidText
 	@Column
 	private String				achievements;
 	@Mandatory
-	//Valid
+	@Valid
 	@Column
-	private boolean				licensed;
+	private Boolean				licensed;
 }
